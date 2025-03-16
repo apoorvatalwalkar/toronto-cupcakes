@@ -1,1 +1,115 @@
 
+  <!-- TO RUN IN BROWSER:
+    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
+    2. Right click html file and either run in default browser or another browser
+  -->
+
+  
+
+  <!DOCTYPE html>
+    <html>
+        <link rel = "stylesheet" href="styles.css">
+        <head>
+            <title>Accessible Components</title>
+            <link rel="stylesheet" href="https://use.typekit.net/kas3fub.css">
+        </head>
+        <div class="topnav">
+            <img class="logo" src="assets/logo.png" height="40px">
+            <div style="float:right;">
+                <button class="button-plain" href="#home">Home</button>
+                <button class="button-plain" href="#home">Occasions</button>
+                <button class="button-plain" href="#home">Cupcakes</button>
+                <button class="button-box" href="#home" style="margin-left: 20px; margin-right: 10px">Order Now</button>
+            </div>
+        </div>
+        <div class="header">
+            <div class="flex-container" style="
+                flex-direction: row;
+                align-items: center;
+                padding-left: clamp(20px, 10vw, 175px);
+                padding-right: 50px;"
+                
+            >
+                <div class="flex-container" style="
+                    flex-direction: column; 
+                    flex-wrap: nowrap; 
+                    justify-content: left;
+                    align-items:flex-start;
+                    "
+                    >
+                    <h3 style="margin-bottom:10px; text-align: left;"> TORONTO CUPCAKE</h3>
+                    <h1>your go-to destination for cupcakes in Toronto</h1>
+                    <button class="button-box-big" href="#home" style="margin-top:20px">Order Now</button>
+                </div>
+                <img src="cupcake_images/cupcake.png" width="50%" style="flex-grow: 2;">
+            </div>
+        </div>
+        <body>
+            <div class="flex-card">
+                <h2>Want them delivered?</h2>
+                <h4>We deliver across Toronto, the GTA, and beyond, ensuring your cupcakes arrive fresh and on time. </h4>
+                <button class="button-box-big" href="#home" style="margin-top:20px">Order Delivery</button>
+            </div>
+
+            <div class="flex-container" style="
+                flex-direction: row;
+                align-items: center;
+                padding-left: 50px;
+                padding-right: clamp(20px, 10vw, 175px);
+                margin: 80px 0px"
+                >
+                <img src="cupcake_images/cupcake2.png" width="40%" style="flex-grow: 2;">
+                <div class="flex-container" style="
+                    flex-direction: column; 
+                    flex-wrap: nowrap; 
+                    justify-content: right;
+                    padding-bottom: 20px;
+                    align-items:flex-end;
+                    "
+                    >
+                    
+                    <h2 style="text-align: right;">perfect for every occasion</h2>
+                    <h4 style="margin-bottom:10px; text-align: right;"> Our beautifully crafted cupcakes are perfect for any occasion—whether it’s an elegant wedding, 
+                        a fun-filled birthday party, or a themed event that requires something truly special.</h4>
+                    <button class="button-box-big" href="#home" style="margin-top:20px">Order Now</button>
+                </div>
+                
+            </div>
+
+            <h2 style="text-align: center"> Best Sellers</h2>
+            <div class="cupcake-container">
+                <div class="cupcake">
+                    <img src="cupcake_images/cupcake3.png">
+                    <h3>Carrot Cake Cupcake</h3>
+                    <h5>$3.75</h5>
+                    <button class="button-box" >Add to Cart</button>
+                </div>
+                <div class="cupcake">
+                    <img src="cupcake_images/cupcake4.png">
+                    <h3>Fun Funfetti Cupcake</h3>
+                    <h5>$3.75</h5>
+                    <button class="button-box" >Add to Cart</button>
+                </div>
+                <div class="cupcake">
+                    <img src="cupcake_images/cupcake.png">
+                    <h3>Pink Pink Cupcake</h3>
+                    <h5>$3.75</h5>
+                    <button class="button-box" >Add to Cart</button>
+                </div>
+                <div class="cupcake">
+                    <img src="cupcake_images/cupcake5.png">
+                    <h3>Classic Vanilla Cupcake</h3>
+                    <h5>$3.75</h5>
+                    <button class="button-box" >Add to Cart</button>
+                </div>
+            </div>
+        </body>
+
+        <div class="footer">
+            <button class="button-plain" href="#home">Home</button>
+            <button class="button-plain">About Us</button>
+            <button class="button-plain" href="#home">Contact</button>
+            <button class="button-plain">Community</button>
+            <button class="button-plain">Services</button>
+        </div>
+    </html>

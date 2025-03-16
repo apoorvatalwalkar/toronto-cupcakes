@@ -1,0 +1,157 @@
+.topnav{
+    background-color: #FFF1F1;
+    color: black;
+    padding: 20px;
+}
+
+.button-plain {
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    font-family: "kantumruy-pro", sans-serif;
+}
+
+.button-plain:hover {
+    color: #CA2959;
+}
+
+.button-box {
+    background-color: #CA2959;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    font-family: "kantumruy-pro", sans-serif;
+}
+
+.button-box:hover {
+    background-color: #7E0D2F;
+}
+
+.button-box-big {
+    background-color: #CA2959;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: clamp(18px, 2vw, 35px);
+    transition-duration: 0.4s;
+    font-family: "kantumruy-pro", sans-serif;
+}
+
+.button-box-big:hover {
+    background-color: #7E0D2F;
+}
+
+.flex-container {
+    display: flex;
+    margin: 0px;
+}
+
+.flex-card{
+    display: flex;
+    border-radius: 20px;
+    background-color: #EE7196;
+    align-items:flex-start;
+    margin: 60px 80px; 
+    padding: 100px 70px; 
+    color:white; 
+    flex-direction: column;
+}
+
+.cupcake-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+    margin-bottom: 100px
+}
+
+.cupcake{
+    display: flex;
+    border-radius: 20px;
+    background-color: #F9BCCE;
+    flex-direction: column;
+    padding: 20px;
+    width: 250px;
+    height: 400px;
+    margin:5px;
+    justify-content: space-evenly;
+}
+
+.header {
+    padding: 20px 0px;
+}
+
+body{
+    background-color: #FFF1F1;
+    font-family: "kantumruy-pro", sans-serif;
+    margin: 0px;
+}
+.img{
+    padding: 12px
+}
+
+h1{
+    font-size: clamp(0px, 7vw, 90px);
+    font-family: "sigurd-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wght" 800;
+    line-height: 0.9;
+    margin:0px
+}
+h2{ 
+    font-size: clamp(40px, 5.5vw, 75px);
+    font-family: "sigurd-variable", sans-serif;
+    font-variation-settings: "slnt" 0, "wght" 800;
+    line-height: 0.9;
+    margin:0px
+}
+h3{ 
+    font-weight: normal; 
+    font-family: "kantumruy-pro", sans-serif;
+    font-size: clamp(20px, 2.5vw, 30px);
+    margin:0px;
+    text-align: center;
+}
+
+h4{ 
+    text-align: left;
+    font-weight: normal; 
+    font-family: "kantumruy-pro", sans-serif;
+    margin:10px;
+    font-size: 25px;
+}
+
+h5{ 
+    font-weight: normal; 
+    font-family: "kantumruy-pro", sans-serif;
+    font-size: clamp(15px, 1.5vw, 25px);
+    margin:10px;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer{
+    display: flex;
+    background-color: #F9BCCE;
+    flex-direction: row;
+    margin: 0px;
+    padding: 20px;
+    justify-content: center;
+}
