@@ -1,8 +1,39 @@
 .topnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #FFF1F1;
+    height: clamp(40px, 4vw, 80px);
     color: black;
-    padding: 20px;
+    padding: 8px 20px;
 }
+
+@media screen and (max-width: 800px) {
+    .topnav {
+      height: 60px;
+    }
+  }
+
+.nav-elements {
+    padding-top:10px;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-elements {
+      display: none;
+    }
+  }
+
+.hamburger{
+    padding: 12px
+}
+
+@media screen and (min-width: 800px) {
+    .hamburger {
+      display: none;
+    }
+  }
 
 .button-plain {
     background-color: transparent;
@@ -24,10 +55,11 @@
     background-color: #CA2959;
     border: none;
     color: white;
-    padding: 10px 24px;
+    margin: clamp(10px, 1rem - 0.25vw, 0px) 0px;
+    padding: 10px clamp(15px, 1vw, 24px);
     border-radius: 5px;
     text-align: center;
-    font-size: 16px;
+    font-size: clamp(10px, 1vw, 16px);
     transition-duration: 0.4s;
     font-family: "kantumruy-pro", sans-serif;
 }
@@ -40,10 +72,10 @@
     background-color: #CA2959;
     border: none;
     color: white;
-    padding: 15px 40px;
     border-radius: 5px;
     text-align: center;
-    font-size: clamp(18px, 2vw, 35px);
+    padding: clamp(8px, 0.75vw, 15px) clamp(10px, 2vw, 30px);
+    font-size: clamp(10px, 2vw, 35px);
     transition-duration: 0.4s;
     font-family: "kantumruy-pro", sans-serif;
 }
@@ -55,6 +87,28 @@
 .flex-container {
     display: flex;
     margin: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+      flex-wrap: wrap;
+    }
+  }
+
+.flex-card-mini {
+    display: flex;
+    width: 250px;
+    height: clamp(200px, 28vw, 280px);
+    margin: 5px;
+    background-color: #EE7196;
+    color:white; 
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
 }
 
 .flex-card{
@@ -63,7 +117,7 @@
     background-color: #EE7196;
     align-items:flex-start;
     margin: 60px 80px; 
-    padding: 100px 70px; 
+    padding: clamp(10px, 2rem + 0.5vw, 50px)  clamp(10px, 5vw, 50px); 
     color:white; 
     flex-direction: column;
 }
@@ -75,7 +129,6 @@
     flex-direction: row;
     align-items: center;
     margin: 50px;
-    margin-bottom: 100px
 }
 
 .cupcake{
@@ -85,8 +138,8 @@
     flex-direction: column;
     padding: 20px;
     width: 250px;
-    height: 400px;
-    margin:5px;
+    height: clamp(250px, 35vw + 8rem, 400px);
+    margin: 5px;
     justify-content: space-evenly;
 }
 
@@ -103,15 +156,32 @@ body{
     padding: 12px
 }
 
+.image-hide{
+    padding: 12px
+}
+
+@media screen and (max-width: 800px) {
+    .image-hide {
+        display: none;
+    }
+  }
+
+.center {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
 h1{
-    font-size: clamp(0px, 7vw, 90px);
+    font-size: clamp(30px, 7vw, 90px);
     font-family: "sigurd-variable", sans-serif;
     font-variation-settings: "slnt" 0, "wght" 800;
     line-height: 0.9;
     margin:0px
 }
 h2{ 
-    font-size: clamp(40px, 5.5vw, 75px);
+    font-size: clamp(2px, 5.5vw, 75px);
     font-family: "sigurd-variable", sans-serif;
     font-variation-settings: "slnt" 0, "wght" 800;
     line-height: 0.9;
@@ -120,7 +190,7 @@ h2{
 h3{ 
     font-weight: normal; 
     font-family: "kantumruy-pro", sans-serif;
-    font-size: clamp(20px, 2.5vw, 30px);
+    font-size: clamp(10px, 2.5vw, 30px);
     margin:0px;
     text-align: center;
 }
@@ -130,21 +200,27 @@ h4{
     font-weight: normal; 
     font-family: "kantumruy-pro", sans-serif;
     margin:10px;
-    font-size: 25px;
+    font-size: clamp(8px, 2.5vw, 25px);
 }
 
 h5{ 
     font-weight: normal; 
     font-family: "kantumruy-pro", sans-serif;
-    font-size: clamp(15px, 1.5vw, 25px);
+    font-size: clamp(8px, 1.5vw, 25px);
     margin:10px;
     text-align: center;
+}
+
+p{
+    line-height: 1.1;
+    font-size: clamp(8px, 0.5vw + 0.6rem, 20px);
 }
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
 }
 
 .footer{
