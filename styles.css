@@ -8,9 +8,10 @@
     padding: 8px 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .topnav {
       height: 60px;
+      margin-bottom: 50px;
     }
   }
 
@@ -19,7 +20,7 @@
     align-items: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .nav-elements {
       display: none;
     }
@@ -29,7 +30,7 @@
     padding: 12px
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .hamburger {
       display: none;
     }
@@ -55,11 +56,9 @@
     background-color: #CA2959;
     border: none;
     color: white;
-    margin: clamp(10px, 1rem - 0.25vw, 0px) 0px;
-    padding: 10px clamp(15px, 1vw, 24px);
+    padding: 0px 1rem;
     border-radius: 5px;
-    text-align: center;
-    font-size: clamp(10px, 1vw, 16px);
+    font-size: clamp(14px, 1.5vw, 16px);
     transition-duration: 0.4s;
     font-family: "kantumruy-pro", sans-serif;
 }
@@ -91,17 +90,101 @@
     justify-content: space-evenly;
 }
 
-@media screen and (max-width: 800px) {
+.flex-container-right-normal {
+    display: flex;
+    margin: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.flex-container-left-reverse {
+    display: flex;
+    margin: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-container-left {
+    display: flex;
+    flex-direction: column; 
+    margin: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap; 
+    padding-bottom: 20px;
+    align-items:flex-end;
+}
+
+.flex-container-right {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column; 
+    flex-wrap: nowrap; 
+    padding-bottom: 20px;
+    align-items:flex-start;
+}
+
+@media screen and (max-width: 1000px) {
+
     .flex-container {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
-  }
+
+    .flex-container-left-reverse{
+        margin: 120px 40px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .flex-container-right-normal {
+        margin: 120px 40px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .flex-container-left {
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .flex-container-right {
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and not (max-width: 1000px) {
+
+    .flex-container-right-normal {
+        padding-left: clamp(60px, 7vw, 80px);
+    }
+
+    .flex-container-left-reverse {
+        padding-right: clamp(60px, 7vw, 80px);
+    }
+    .flex-container-left {
+        text-align: right;
+    }
+
+    .flex-container-right {
+        text-align: left;
+    }
+}
 
 .flex-card-mini {
     display: flex;
     width: 250px;
-    height: clamp(200px, 28vw, 280px);
     margin: 5px;
+    height: 22rem;
     background-color: #EE7196;
     color:white; 
     flex-direction: column;
@@ -109,6 +192,7 @@
     align-items: center;
     padding: 20px;
     text-align: center;
+    justify-content: flex-start;
 }
 
 .flex-card{
@@ -125,7 +209,7 @@
 .cupcake-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     margin: 50px;
@@ -138,9 +222,8 @@
     flex-direction: column;
     padding: 20px;
     width: 250px;
-    height: clamp(250px, 35vw + 8rem, 400px);
     margin: 5px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .header {
@@ -160,7 +243,7 @@ body{
     padding: 12px
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .image-hide {
         display: none;
     }
@@ -174,14 +257,14 @@ body{
   }
 
 h1{
-    font-size: clamp(30px, 7vw, 90px);
+    font-size: clamp(35px, 4rem + 2vw, 90px);
     font-family: "sigurd-variable", sans-serif;
     font-variation-settings: "slnt" 0, "wght" 800;
     line-height: 0.9;
     margin:0px
 }
 h2{ 
-    font-size: clamp(2px, 5.5vw, 75px);
+    font-size: clamp(40px, 3rem + 1vw, 75px);
     font-family: "sigurd-variable", sans-serif;
     font-variation-settings: "slnt" 0, "wght" 800;
     line-height: 0.9;
@@ -190,30 +273,29 @@ h2{
 h3{ 
     font-weight: normal; 
     font-family: "kantumruy-pro", sans-serif;
-    font-size: clamp(10px, 2.5vw, 30px);
+    font-size: clamp(30px, 1rem + 1.5vw, 40px);
     margin:0px;
     text-align: center;
 }
 
 h4{ 
-    text-align: left;
     font-weight: normal; 
     font-family: "kantumruy-pro", sans-serif;
-    margin:10px;
-    font-size: clamp(8px, 2.5vw, 25px);
+    font-size: clamp(24px, 1rem + 1vw, 25px);
 }
 
 h5{ 
     font-weight: normal; 
     font-family: "kantumruy-pro", sans-serif;
-    font-size: clamp(8px, 1.5vw, 25px);
+    font-size: clamp(24px, 1.5vw, 25px);
     margin:10px;
     text-align: center;
+    color: #CA2959;
 }
 
 p{
     line-height: 1.1;
-    font-size: clamp(8px, 0.5vw + 0.6rem, 20px);
+    font-size: 20px;
 }
 
 .center {
