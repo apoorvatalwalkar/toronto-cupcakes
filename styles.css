@@ -226,6 +226,10 @@
     justify-content: center;
 }
 
+.cupcake:hover {
+    background-color: #EE7196;;
+}
+
 .header {
     padding: 20px 0px;
 }
